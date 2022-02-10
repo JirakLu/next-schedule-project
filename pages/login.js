@@ -5,7 +5,7 @@ export default function Login() {
     return (
         <div>
             <FirebaseAuth />
-            <Link href="/">
+            <Link href="/" passHref>
                 <button>Go back</button>
             </Link>
         </div>

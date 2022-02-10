@@ -8,13 +8,13 @@ export default function Navbar() {
     return (
         <nav className="h-16 w-screen bg-blue-500 text-white">
             <div className="max-w-6xl w-screen h-16 mx-auto flex flex-row items-center justify-between">
-                <Link href="/">
+                <Link href="/" passHref>
                     <h1 className="tracking-wider font-semibold text-3xl cursor-pointer">SOPOŠOE</h1>
                 </Link>
                 {!user ?
                 <ul className="h-full flex flex-row items-center gap-20">
                     <li>
-                        <Link href="/login">
+                        <Link href="/login" passHref>
                             <button className="text-1xl tracking-wider font-normal">Login</button>
                         </Link>
                     </li>
@@ -22,12 +22,12 @@ export default function Navbar() {
                 :
                 <ul className="h-full flex flex-row items-center gap-20">
                     <li>
-                        <Link href="/test">
+                        <Link href="/test" passHref>
                             <button className="text-1xl tracking-wider font-normal">Test</button>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/schedule">
+                        <Link href="/schedule" passHref>
                             <button className="text-1xl tracking-wider font-normal">Schedule</button>
                         </Link>
                     </li>
