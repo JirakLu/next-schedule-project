@@ -22,11 +22,6 @@ export default function Navbar() {
                 :
                 <ul className="h-full flex flex-row items-center gap-20">
                     <li>
-                        <Link href="/test" passHref>
-                            <button className="text-1xl tracking-wider font-normal">Test</button>
-                        </Link>
-                    </li>
-                    <li>
                         <Link href="/schedule" passHref>
                             <button className="text-1xl tracking-wider font-normal">Schedule</button>
                         </Link>
